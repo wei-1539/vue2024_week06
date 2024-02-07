@@ -24,7 +24,7 @@ export default {
   methods: {
     checkUser() {
       console.log(VITE_URL);
-      const api = `${VITE_URL}/v2/api/user/check`;
+      const api = `${VITE_URL}v2/api/user/check`;
       axios.post(api)
         .then((res) => {
           console.log(res, '成功');
