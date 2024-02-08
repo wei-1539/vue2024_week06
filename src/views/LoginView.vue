@@ -50,7 +50,7 @@ export default {
       axios.post(api, this.user)
         .then((res) => {
           const { token, expired } = res.data;
-          document.cookie = `hexToken = ${token};expires = ${new Date(expired)}; path=/`;
+          document.cookie = `hexSchool = ${token};expires = ${new Date(expired)}; path=/`;
           this.$router.push('/admin/product');
         })
         .catch((err) => {
